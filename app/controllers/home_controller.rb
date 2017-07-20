@@ -6,40 +6,8 @@ class HomeController < ApplicationController
       require 'date'
       
       
-      year = Time.now.year.to_s
       
-      if Time.now.month.to_s.length == 2
-          month = Time.now.month.to_s
-          else
-          month = '0' + Time.now.month.to_s
-      end
-      
-      if Time.now.day.to_s.length == 2
-          day = Time.now.day.to_s
-          else
-          day = '0' + Time.now.day.to_s
-      end
-      
-      if Time.now.hour.to_s.length == 2
-          hour = Time.now.hour.to_s + 9
-          else
-          hour = '0' + Time.now.hour.to_s
-      end
-      
-      if Time.now.min.to_s.length == 2
-          min = Time.now.min.to_s
-          else
-          min = '0' + Time.now.min.to_s
-      end
-      
-      if Time.now.sec.to_s.length == 2
-          sec = Time.now.sec.to_s
-          else
-          sec = '0' + Time.now.sec.to_s
-      end
-      
-      
-      @now_time = year + "/" + month + "/" + day + "  " + hour + ":" + min + ":" + sec
+      @now_time = Time.now
       
       
       consumerkey = Rails.application.secrets.tokyometro_key
