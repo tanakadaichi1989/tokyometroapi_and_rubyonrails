@@ -7,7 +7,6 @@ class HomeController < ApplicationController
       
       
       
-      @now_time = Time.now
       
       
       consumerkey = Rails.application.secrets.tokyometro_key
