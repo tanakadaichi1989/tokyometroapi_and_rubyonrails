@@ -1,0 +1,20 @@
+<h1>東京メトロ運転状況</h1>
+<p>情報取得時刻：<%= @now_time %></p>
+
+
+
+<table>
+
+
+
+<% @result.each do |result| %>
+<tr><td><%= result["odpt:railway"] %></td><td><%= result["odpt:trainInformationText"] %></td></tr>
+<% end %>
+
+
+
+</table>
+
+<br>
+
+<%= @result %>
