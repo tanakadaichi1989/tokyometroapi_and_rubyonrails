@@ -6,9 +6,6 @@ class HomeController < ApplicationController
       require 'date'
       
       
-      
-      
-      
       consumerkey = Rails.application.secrets.tokyometro_key
       
       uri = URI.parse("https://api.tokyometroapp.jp/api/v2/datapoints?rdf:type=odpt:TrainInformation&acl:consumerKey=#{consumerkey}")
