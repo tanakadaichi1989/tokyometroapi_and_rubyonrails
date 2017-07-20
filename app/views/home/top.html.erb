@@ -5,21 +5,20 @@
 <p>更新日：2017/07/20（現在制作途中）</p>
 <br>
 <p>情報取得時刻：<%= Time.now %></p>
-
-
+<br>
 
 <table>
 <thead>
 <th>路線</th><th>運行状況</th>
 </thead>
-
-<% @result.each do |result| %>
-<tr><td><%= result["odpt:railway"] %></td><td><%= result["odpt:trainInformationText"] %></td></tr>
-<% end %>
-
-
-
+<tr><td>銀座線</td><td><%= @result[2]["odpt:trainInformationText"] %></td></tr>
+<tr><td>丸ノ内線</td><td><%= @result[7]["odpt:trainInformationText"] %></td></tr>
+<tr><td>日比谷線</td><td><%= @result[5]["odpt:trainInformationText"] %></td></tr>
+<tr><td>東西線</td><td><%= @result[3]["odpt:trainInformationText"] %></td></tr>
+<tr><td>千代田線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
+<tr><td>有楽町線</td><td><%= @result[1]["odpt:trainInformationText"] %></td></tr>
+<tr><td>半蔵門線</td><td><%= @result[4]["odpt:trainInformationText"] %></td></tr>
+<tr><td>南北線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
+<tr><td>副都心線</td><td><%= @result[0]["odpt:trainInformationText"] %></td></tr>
 </table>
-
-<br>
 
