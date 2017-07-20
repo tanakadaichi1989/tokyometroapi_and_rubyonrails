@@ -21,7 +21,7 @@ class HomeController < ApplicationController
       end
       
       if Time.now.hour.to_s.length == 2
-          hour = Time.now.hour.to_s
+          hour = Time.now.hour.to_s + 9
           else
           hour = '0' + Time.now.hour.to_s
       end
