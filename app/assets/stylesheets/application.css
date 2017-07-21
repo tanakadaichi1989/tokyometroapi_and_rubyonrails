@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+body{
+  font-family: sans-serif;
+}
+
+header{
+  background-color: black;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  padding: 10px 10px 10px 20px;
+  z-index: 100;
+  box-shadow: 0px 1px 1px gray;
+}
+
+
+header h1{
+  color:white
+}
+
+header small{
+  font-family: 'Oswald', sans-serif;
+}
+
+#yield{
+  padding: 10px;
+  position: absolute;
+  top:150px;
+  padding-bottom: 150px;
+}
+
+footer{
+  padding: 10px;
+  position: fixed;
+  z-index:100;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 50px;
+  background-color: gray;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+table thead th{
+  text-align: center;
+}
+
+
+tbody{
+  font-weight: bolder;
+}
+
+#notice{
+  border: 0.5px solid #EEEEEE;
+  padding:10px;
+  margin: 10px;
+  background-color: #EEEEEE;
+}
+
