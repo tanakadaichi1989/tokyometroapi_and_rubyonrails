@@ -58,7 +58,9 @@ footer{
 }
 
 
-
+table{
+  margin-top:20px;
+}
 
 table thead th{
   text-align: center;
@@ -76,3 +78,7 @@ tbody{
   background-color: #EEEEEE;
 }
 
+img{
+  width:50px;
+  margin-right: 10px;
+}
