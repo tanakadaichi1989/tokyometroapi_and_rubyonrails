@@ -31,7 +31,8 @@ header{
 
 
 header h1{
-  color:white
+  color:white;
+  font-size:30px;
 }
 
 header small{
@@ -41,7 +42,7 @@ header small{
 #yield{
   padding: 10px;
   position: absolute;
-  top:150px;
+  top:130px;
   padding-bottom: 150px;
 }
 
