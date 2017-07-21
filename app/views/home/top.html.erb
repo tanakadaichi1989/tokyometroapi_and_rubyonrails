@@ -4,7 +4,10 @@
 <p>情報取得時刻：<%= Time.now %></p>
 <br>
 
-<table>
+<!-- Bootstrapを利用したスクロール機能付きテーブル -->
+<div class="container">
+<div class="table-responsive">
+<table class="table table-bordered">
 <thead>
 <th>路線</th><th>運行状況</th>
 </thead>
@@ -18,4 +21,5 @@
 <tr><td>南北線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
 <tr><td>副都心線</td><td><%= @result[0]["odpt:trainInformationText"] %></td></tr>
 </table>
-
+</div>
+</div>
