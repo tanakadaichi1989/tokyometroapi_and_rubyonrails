@@ -1,33 +1,32 @@
 
+
 <div id= "notice">
 <article>
 <p>東京メトロが提供しているオープンデータサイト（https://developer.tokyometroapp.jp/info）から、<strong>Ruby on Rails</strong>を用いて運行状況を抽出しています。<br><br>なお正式な運行状況は、<strong>東京メトロ公式ホームページ</strong>よりご確認ください。</p>
 <br>
-<p>ホームページ更新日：2017/07/21（Bootstrapを用いて、ページの装飾を実施）</p>
-<p><strong>情報取得時刻：<%= Time.now %></strong></p>
+<p><strong>情報取得時刻：<span id="now_time"> ここに情報取得時刻が表示されます。 </span></strong></p>
 </article>
 </div>
 
 
-<!-- Bootstrapを利用したスクロール機能付きテーブル -->
 <div class="container">
-<div class="table-responsive">
-<table class="table table-bordered">
+<table>
 <thead>
-<th>路線</th><th>運行状況</th>
+<th></th><th>路線</th><th>運行状況</th>
 </thead>
-<tr><td><%= image_tag("G.jpg") %>銀座線</td><td><%= @result[2]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("M.jpg") %>丸ノ内線</td><td><%= @result[7]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("H.jpg") %>日比谷線</td><td><%= @result[5]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("T.jpg") %>東西線</td><td><%= @result[3]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("C.jpg") %>千代田線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("Y.jpg") %>有楽町線</td><td><%= @result[1]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("Z.jpg") %>半蔵門線</td><td><%= @result[4]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("N.jpg") %>南北線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
-<tr><td><%= image_tag("F.jpg") %>副都心線</td><td><%= @result[0]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("G.jpg") %></td><td>銀座線</td><td><%= @result[2]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("M.jpg") %></td><td>丸ノ内線</td><td><%= @result[7]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("H.jpg") %></td><td>日比谷線</td><td><%= @result[5]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("T.jpg") %></td><td>東西線</td><td><%= @result[3]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("C.jpg") %></td><td>千代田線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("Y.jpg") %></td><td>有楽町線</td><td><%= @result[1]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("Z.jpg") %></td><td>半蔵門線</td><td><%= @result[4]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("N.jpg") %></td><td>南北線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
+<tr><td><%= image_tag("F.jpg") %></td><td>副都心線</td><td><%= @result[0]["odpt:trainInformationText"] %></td></tr>
 </table>
 </div>
+
 <div id="attention">
 <p><small>※各路線のロゴは、東京メトロオープンデータサイトから支給いただいたものを利用しています。</small></p>
 </div>
-</div>
+
