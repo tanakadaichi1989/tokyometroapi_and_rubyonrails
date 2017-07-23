@@ -3,7 +3,7 @@ require_relative 'boot'
 require 'rails/all'
 
 
-
+config.time_zone = 'Tokyo'
 
 
 # Require the gems listed in Gemfile, including any gems
