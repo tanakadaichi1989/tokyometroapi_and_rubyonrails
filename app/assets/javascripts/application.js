@@ -18,5 +18,7 @@
 
 
 $(function(){
-  $("#now_time").text = Date.now();
+  $('#notice-btn').click(function(){
+    $('#notice').fadeIn();
+  });
 });
