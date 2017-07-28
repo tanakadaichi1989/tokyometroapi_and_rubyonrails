@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-
+//<i class="fa fa-angle-double-down" aria-hidden="true"></i>
 
 $(function(){
   //注意事項ボタン
@@ -31,7 +31,7 @@ $(function(){
     if($('#ginza-footer').hasClass('opened'))
     {$('#ginza-footer').removeClass('opened').fadeOut(500),$('#open-btn-ginza').text("+")}
    else
-    {$('#ginza-footer').addClass('opened').fadeIn(500),$('#open-btn-ginza').text("-")}
+    {$('#ginza-footer').addClass('opened').fadeIn(500),$('#open-btn-ginza').text("−")}
   });
 
 
@@ -40,7 +40,7 @@ $(function(){
     if($('#marunouchi-footer').hasClass('opened'))
     {$('#marunouchi-footer').removeClass('opened').fadeOut(500),$('#open-btn-marunouchi').text("+")}
    else
-    {$('#marunouchi-footer').addClass('opened').fadeIn(500),$('#open-btn-marunouchi').text("-")}
+    {$('#marunouchi-footer').addClass('opened').fadeIn(500),$('#open-btn-marunouchi').text("−")}
 });
 
 
@@ -49,7 +49,7 @@ $(function(){
     if($('#hibiya-footer').hasClass('opened'))
     {$('#hibiya-footer').removeClass('opened').fadeOut(500),$('#open-btn-hibiya').text("+")}
    else
-    {$('#hibiya-footer').addClass('opened').fadeIn(500),$('#open-btn-hibiya').text("-")}
+    {$('#hibiya-footer').addClass('opened').fadeIn(500),$('#open-btn-hibiya').text("−")}
 });
 
             //東西線ボタン
@@ -57,7 +57,7 @@ $(function(){
     if($('#tozai-footer').hasClass('opened'))
     {$('#tozai-footer').removeClass('opened').fadeOut(500),$('#open-btn-tozai').text("+")}
    else
-    {$('#tozai-footer').addClass('opened').fadeIn(500),$('#open-btn-tozai').text("-")}
+    {$('#tozai-footer').addClass('opened').fadeIn(500),$('#open-btn-tozai').text("−")}
 });
 
 
@@ -66,7 +66,7 @@ $(function(){
     if($('#chiyoda-footer').hasClass('opened'))
     {$('#chiyoda-footer').removeClass('opened').fadeOut(500),$('#open-btn-chiyoda').text("+")}
    else
-    {$('#chiyoda-footer').addClass('opened').fadeIn(500),$('#open-btn-chiyoda').text("-")}
+    {$('#chiyoda-footer').addClass('opened').fadeIn(500),$('#open-btn-chiyoda').text("−")}
 });
 
 
@@ -75,7 +75,7 @@ $(function(){
     if($('#yurakucho-footer').hasClass('opened'))
     {$('#yurakucho-footer').removeClass('opened').fadeOut(500),$('#open-btn-yurakucho').text("+")}
    else
-    {$('#yurakucho-footer').addClass('opened').fadeIn(500),$('#open-btn-yurakucho').text("-")}
+    {$('#yurakucho-footer').addClass('opened').fadeIn(500),$('#open-btn-yurakucho').text("−")}
 });
 
             //半蔵門線ボタン
@@ -83,7 +83,7 @@ $(function(){
     if($('#hanzomon-footer').hasClass('opened'))
     {$('#hanzomon-footer').removeClass('opened').fadeOut(500),$('#open-btn-hanzomon').text("+")}
    else
-    {$('#hanzomon-footer').addClass('opened').fadeIn(500),$('#open-btn-hanzomon').text("-")}
+    {$('#hanzomon-footer').addClass('opened').fadeIn(500),$('#open-btn-hanzomon').text("−")}
 });
 
 
@@ -92,7 +92,7 @@ $(function(){
     if($('#namboku-footer').hasClass('opened'))
     {$('#namboku-footer').removeClass('opened').fadeOut(500),$('#open-btn-namboku').text("+")}
    else
-    {$('#namboku-footer').addClass('opened').fadeIn(500),$('#open-btn-namboku').text("-")}
+    {$('#namboku-footer').addClass('opened').fadeIn(500),$('#open-btn-namboku').text("−")}
 });
 
                 //副都心線ボタン
@@ -100,7 +100,7 @@ $(function(){
     if($('#fukutoshin-footer').hasClass('opened'))
     {$('#fukutoshin-footer').removeClass('opened').fadeOut(500),$('#open-btn-fukutoshin').text("+")}
    else
-    {$('#fukutoshin-footer').addClass('opened').fadeIn(500),$('#open-btn-fukutoshin').text("-")}
+    {$('#fukutoshin-footer').addClass('opened').fadeIn(500),$('#open-btn-fukutoshin').text("−")}
 });
 
 
