@@ -18,6 +18,11 @@ body{
   font-family: 'Oswald', sans-serif;
 }
 
+#yield{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /*PC*/
 
 @media screen and (min-width:961px){
