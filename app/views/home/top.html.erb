@@ -1,29 +1,67 @@
 <h2>東京メトロ運転状況</h2>
+<p><strong>情報取得時刻：<span id="time"><%= (Time.now + 32400).strftime("%Y年 %m月 %d日 %H時 %M分 %S秒") %></span></strong></p>
 
-<button id="notice-btn">注意事項</button>
+
+<button id="notice-btn">注意事項を開く</button>
 <div id= "notice">
-<article>
-<p>東京メトロが提供しているオープンデータサイトから、<br><strong>Ruby on Rails</strong>を用いて運行状況を抽出しています。<br><br>なお正式な運行状況は、<br><strong>東京メトロ公式ホームページ</strong>よりご確認ください。</p>
-<p><strong>情報取得時刻：<%= Time.now %></strong></p>
-</article>
+
+<p>東京メトロが提供しているオープンデータサイトから、<br><strong>Ruby on Rails</strong>を用いて運行状況を抽出しています。<br>
+正式な運行状況は、<strong>東京メトロ公式ホームページ</strong>よりご確認ください。</p>
+
 </div>
 
 
 <div class="container">
-<table>
-<thead>
-<th>路線</th><th>運行状況</th>
-</thead>
-<tr><td class="td-line"><%= image_tag("G.jpg") %>銀座線</td><td><%= @result[2]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("M.jpg") %>丸ノ内線</td><td><%= @result[7]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("H.jpg") %>日比谷線</td><td><%= @result[5]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("T.jpg") %>東西線</td><td><%= @result[3]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("C.jpg") %>千代田線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("Y.jpg") %>有楽町線</td><td><%= @result[1]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("Z.jpg") %>半蔵門線</td><td><%= @result[4]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("N.jpg") %>南北線</td><td><%= @result[6]["odpt:trainInformationText"] %></td></tr>
-<tr><td class="td-line"><%= image_tag("F.jpg") %>副都心線</td><td><%= @result[0]["odpt:trainInformationText"] %></td></tr>
-</table>
+
+<div id="container-ginza">
+<div id="ginza-header"><%= image_tag("G.jpg") %><span id="ginza">銀座線</span><button id="open-btn-ginza">+</button></div>
+<p id="ginza-footer"><%= @result[2]["odpt:trainInformationText"] %></p>
+</div>
+
+<div id="container-marunouchi">
+<div id="marunouchi-header"><%= image_tag("M.jpg") %><span id="marunouchi">丸ノ内線</span><button id="open-btn-marunouchi">+</button></div>
+<p id="marunouchi-footer"><%= @result[7]["odpt:trainInformationText"] %></p>
+</div>
+
+<div id="container-hibiya">
+<div id="hibiya-header"><%= image_tag("H.jpg") %><span id="hibiya">日比谷線</span><button id="open-btn-hibiya">+</button></div>
+<p id="hibiya-footer"><%= @result[5]["odpt:trainInformationText"] %></p>
+</div>
+
+<div id="container-tozai">
+<div id="tozai-header"><%= image_tag("T.jpg") %><span id="tozai">東西線</span><button id="open-btn-tozai">+</button></div>
+<p id="tozai-footer"><%= @result[3]["odpt:trainInformationText"] %></p>
+</div>
+
+
+<div id="container-chiyoda">
+<div id="chiyoda-header"><%= image_tag("C.jpg") %><span id="chiyoda">千代田線</span><button id="open-btn-chiyoda">+</button></div>
+<p id="chiyoda-footer"><%= @result[6]["odpt:trainInformationText"] %></p>
+</div>
+
+<div id="container-yurakucho">
+<div id="yurakucho-header"><%= image_tag("Y.jpg") %><span id="yurakucho">有楽町線</span><button id="open-btn-yurakucho">+</button></div>
+<p id="yurakucho-footer"><%= @result[1]["odpt:trainInformationText"] %></p>
+</div>
+
+
+<div id="container-hanzomon">
+<div id="hanzomon-header"><%= image_tag("Z.jpg") %><span id="hanzomon">半蔵門線</span><button id="open-btn-hanzomon">+</button></div>
+<p id="hanzomon-footer"><%= @result[4]["odpt:trainInformationText"] %></p>
+</div>
+
+<div id="container-namboku">
+<div id="namboku-header"><%= image_tag("N.jpg") %><span id="namboku">南北線</span><button id="open-btn-namboku">+</button></div>
+<p id="namboku-footer"><%= @result[6]["odpt:trainInformationText"] %></p>
+</div>
+
+
+<div id="container-fukutoshin">
+<div id="fukutoshin-header"><%= image_tag("F.jpg") %><span id="fukutoshin">副都心線</span><button id="open-btn-fukutoshin">+</button></div>
+<p id="fukutoshin-footer"><%= @result[0]["odpt:trainInformationText"] %></p>
+</div>
+
+
 </div>
 
 <div id="attention">
