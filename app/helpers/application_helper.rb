@@ -1,3 +1,5 @@
+require "date"
+
 module ApplicationHelper
     def full_page(page_title="")
         base_title = "TokyoMetroAPI & Ruby on Rails"
@@ -7,5 +9,9 @@ module ApplicationHelper
         else
             page_title + " | " + base_title
         end
+    end
+    
+    def now_time
+        DateTime.now.strftime("%Y/%m/d %H時:M分")
     end
 end

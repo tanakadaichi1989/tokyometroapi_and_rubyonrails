@@ -1,50 +1,51 @@
 <% provide(:title,"運行状況") %>
 
 <h2>運転状況</h2>
-<p>現在時刻：</p>
-<p>情報取得時刻：</p>
+<p>情報取得時刻：<%= now_time %></p>
 
-<div>
+<div class="container">
+<div class="info ginza">
   <h3>銀座線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Ginza"] %></p>
 </div>
 
-<div>
+<div class="info marunouchi">
   <h3>丸ノ内線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Marunouchi"] %></p>
 </div>
 
-<div>
+<div class="info hibiya">
   <h3>日比谷線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Hibiya"] %></p>
 </div>
 
-<div class="info">
+<div class="info tozai">
   <h3>東西線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Tozai"] %></p>
 </div>
 
-<div>
+<div class="info chiyoda">
   <h3>千代田線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Chiyoda"] %></p>
 </div>
 
-<div>
+<div class="info yurakucho">
   <h3>有楽町線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Yurakucho"] %></p>
 </div>
 
-<div>
+<div class="info hanzomon">
   <h3>半蔵門線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Hanzomon"] %></p>
 </div>
 
-<div>
+<div class="info namboku">
   <h3>南北線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Namboku"] %></p>
 </div>
 
-<div>
+<div class="info fukutoshin">
   <h3>副都心線</h3>
   <p><%= @hash["odpt.Railway:TokyoMetro.Fukutoshin"] %></p>
+</div>
 </div>
