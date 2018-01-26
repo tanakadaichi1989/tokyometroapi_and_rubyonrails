@@ -8,7 +8,7 @@ class HomeController < ApplicationController
       
       consumerkey = Rails.application.secrets.tokyometro_key
       
-      uri = URI.parse("https://api.tokyometroapp.jp/api/v2/datapoints?rdf:type=odpt:TrainInformation&acl:consumerKey=#{consumerkey}")
+      uri = URI.parse("https://api.tokyometroapp.jp/api/v2/datapoints?rdf:type=odpt:TrainInformation&acl:consumerKey=#{API KEY}")
       
       json = Net::HTTP.get(uri)
       @result = JSON.parse(json)

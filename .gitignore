@@ -18,5 +18,6 @@
 !/tmp/.keep/
 .env
 # Ignore Byebug command history file.
+.DS_Store
 .env
 .byebug_history
