@@ -2,9 +2,7 @@
 <html>
   <head>
   <meta charset="UTF-8">
-    <title>TokyoMetroAPI & Ruby on Rails</title>
-    <meta name="description" content="東京メトロオープンデータから支給されたデータを、Ruby on Railsで解析。そこから運転状況を抽出しています。">
-    <meta name="keywords" content="東京メトロ,運転状況,Ruby on Rails,プログラミング,オープンデータ">
+    <title><%= full_page(yield(:title)) %></title>
     <meta name="viewport" content="width=device-width">
     <%= csrf_meta_tags %>
 
@@ -16,10 +14,17 @@
 </head>
 
 <body>
+<header>
+<h1>TokyoMetro API & Ruby on Rails</h1>
+</header>
 
 <div id="yield">
     <%= yield %>
 </div>
+
+<footer>
+  <p>Daichi Tanaka</p>
+</footer>
 
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>

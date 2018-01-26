@@ -1,0 +1,50 @@
+<% provide(:title,"運行状況") %>
+
+<h2>運転状況</h2>
+<p>現在時刻：</p>
+<p>情報取得時刻：</p>
+
+<div>
+  <h3>銀座線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Ginza"] %></p>
+</div>
+
+<div>
+  <h3>丸ノ内線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Marunouchi"] %></p>
+</div>
+
+<div>
+  <h3>日比谷線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Hibiya"] %></p>
+</div>
+
+<div class="info">
+  <h3>東西線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Tozai"] %></p>
+</div>
+
+<div>
+  <h3>千代田線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Chiyoda"] %></p>
+</div>
+
+<div>
+  <h3>有楽町線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Yurakucho"] %></p>
+</div>
+
+<div>
+  <h3>半蔵門線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Hanzomon"] %></p>
+</div>
+
+<div>
+  <h3>南北線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Namboku"] %></p>
+</div>
+
+<div>
+  <h3>副都心線</h3>
+  <p><%= @hash["odpt.Railway:TokyoMetro.Fukutoshin"] %></p>
+</div>

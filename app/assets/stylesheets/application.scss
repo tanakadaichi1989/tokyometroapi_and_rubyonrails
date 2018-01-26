@@ -1,7 +1,35 @@
 @import "bootstrap";
+@import "variation";
 
 body{
   margin:0;
   padding:0;
   box-sizing:border-box;
+}
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  color:white;
+  width:100%;
+  z-index:10;
+  background-color:black;
+  padding-left:10px;
+}
+
+#yield{
+  margin-top:50px;
+  margin-bottom:50px;
+  padding:50px;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  left:0;
+  z-index:10;
+  width:100%;
+  background-color:gray;
+  padding-left:10px;
 }
