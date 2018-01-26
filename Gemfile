@@ -7,6 +7,7 @@ end
 
 gem 'dotenv-rails'
 
+gem 'bootstrap'
 gem 'google-analytics-rails'
 
 
