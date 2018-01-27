@@ -12,7 +12,10 @@ class TimetablesController < ApplicationController
       json = Net::HTTP.get(uri)
       results = JSON.parse(json)
       
-      @timetables = results[79]["odpt:weekdays"]
+      a = 302
+      
+      @timetables = results[a]["odpt:weekdays"]
+      puts results[a]
       
       render('timetables/top')
   end

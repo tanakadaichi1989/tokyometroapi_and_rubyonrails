@@ -220,6 +220,8 @@ module TimetablesHelper
                 return "高島平"
             when "odpt.Station:TokyoMetro.Namboku.Komagome"
                 return "駒込"
+            when "odpt.Station:Tokyu.Meguro.MusashiKosugi"
+                return "武蔵小杉"
             when "odpt.Station:Seibu.SeibuChichibu.SeibuChichibu"
                 return "西武秩父"
             else
