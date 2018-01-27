@@ -8,7 +8,7 @@ class TimetablesController < ApplicationController
   def search
       results = set_request_timetable
       
-      a = params[:number]
+      a = params[:number].to_i
       
       @timetables = results[a]["odpt:weekdays"]
       puts results[a]
