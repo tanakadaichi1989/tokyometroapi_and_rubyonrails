@@ -8,7 +8,7 @@ height:auto;
 
 background-color:white;
 box-shadow:1px 1px 2px gray;
-border-bottom:$color 2px solid;
+border-bottom:$color 3px solid;
 
 img{
   width:20px;
@@ -89,6 +89,8 @@ h2{
 
   #yield{
     margin-top:20px;
+    padding-left:-25px;
+    paddin-right:-25px;
   }
 
   header {
@@ -113,10 +115,12 @@ h2{
 
   #yield{
     margin-top:20px;
+    padding-left:-25px;
+    paddin-right:-25px;
   }
 
   .info{
-    min-height:200px;
+    min-height:100px;
   }
 
   .row{
@@ -126,7 +130,7 @@ h2{
 
 @media screen and (min-width:769px){
   .info{
-    min-height:300px;
+    min-height:150px;
   }
 
   .row{
