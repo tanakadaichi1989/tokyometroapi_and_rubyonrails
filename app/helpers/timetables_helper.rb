@@ -1,4 +1,5 @@
 module TimetablesHelper
+
     
     def set_train_type(train_type)
         case train_type

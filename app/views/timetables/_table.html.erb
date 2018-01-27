@@ -1,0 +1,12 @@
+<table class="table table-striped ">
+<th>発車時刻</th><th>種別</th><th>行先</th><th>備考</th>
+
+<% @timetables.each do |timetable| %>
+<tr>
+  <td class="departure_time"><%= timetable["odpt:departureTime"] %></td>
+  <td class="train_type"><%= set_train_type(timetable["odpt:trainType"]) %></td>
+  <td class="destination"><%= set_destination(timetable["odpt:destinationStation"]) %></td>
+  <td><%= timetable["odpt:notes"] %></td>
+</tr>
+<% end %>
+</table>
