@@ -1,24 +1,22 @@
-# README
+# TokyoMetro API  × Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+東京メトロが公開しているオープンデータと連携させて、運行状況を表示させるサイト
 
-Things you may want to cover:
+## 開発環境
+Ruby 2.4.1
+Rails 5.0.6
+Heroku
 
-* Ruby version
+## 利用した技術
+### Bootstrap
+レスポンシブデザインに利用
 
-* System dependencies
+### SCSS
+CSSに関する作業効率を上げるために利用
 
-* Configuration
+### dotenv
+API アクセスキーの隠匿に利用
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## その他
+開発費用 ¥0-
