@@ -4,6 +4,8 @@
 
 @mixin box($color){
 
+height:auto;
+
 background-color:white;
 box-shadow:1px 1px 2px gray;
 border-bottom:$color 2px solid;
@@ -107,7 +109,6 @@ h2{
   }
 
   .info{
-    height:auto;
     min-height:200px;
   }
 

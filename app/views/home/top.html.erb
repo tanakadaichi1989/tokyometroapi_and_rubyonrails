@@ -2,6 +2,9 @@
 
 <h2>運転状況</h2>
 <p>情報取得時刻：<%= now_time %></p>
+<%= form_tag("/",method:"get") do %>
+<button type="submit" class="btn btn-primary">情報更新</button>
+<% end %>
 
 <div class="container">
 <div class="row">
