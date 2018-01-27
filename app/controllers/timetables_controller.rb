@@ -1,7 +1,5 @@
 class TimetablesController < ApplicationController
-    require 'json'
-    require 'uri'
-    require 'net/http'
+  before_action :set_library
     
   def top
       @timetables = []

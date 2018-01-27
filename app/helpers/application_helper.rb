@@ -1,6 +1,12 @@
-require "date"
-
 module ApplicationHelper
+    
+    def set_library
+        require 'json'
+        require 'uri'
+        require 'net/http'
+        require 'date'
+    end
+    
     def full_page(page_title="")
         base_title = "TokyoMetroAPI & Ruby on Rails"
         
