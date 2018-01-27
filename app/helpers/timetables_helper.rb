@@ -94,7 +94,7 @@ module TimetablesHelper
             when "odpt.Station:TokyoMetro.Marunouchi.ShinjukuSanchome"
                 return "新宿三丁目"
             when "odpt.Station:TokyoMetro.MarunouchiBranch.NakanoFujimicho"
-                return "中野富士見"
+                return "中野富士見町"
             when "odpt.Station:TokyoMetro.Marunouchi.Ogikubo"
                 return "荻窪"
             when "odpt.Station:TokyoMetro.Marunouchi.Shinjuku"

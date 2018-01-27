@@ -3,6 +3,7 @@ class TimetablesController < ApplicationController
     
   def top
       @timetables = []
+      @results = []
   end
   
   def search
@@ -11,6 +12,9 @@ class TimetablesController < ApplicationController
       a = params[:number].to_i
       
       @timetables = results[a]["odpt:weekdays"]
+      @railway = results[a]["odpt:railway"]
+      @station = results[a]["odpt:station"]
+      @direction = results[a]["odpt:railDirection"]
       puts results[a]
       
       render('timetables/top')

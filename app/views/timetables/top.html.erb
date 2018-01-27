@@ -1,7 +1,8 @@
 <% provide(:title,"時刻表検索") %>
 
 <h2>時刻表検索</h2>
-<p>〇〇駅 〇〇方面</p>
+<p><%= @railway %>線 <%= @station %>駅 <%= @direction %>方面 平日</p>
+
 
 <%= form_tag("/timetable",method:"post") do %>
 <input type="text" name="number">
