@@ -2,10 +2,15 @@
 
 <h2>時刻表検索</h2>
 
-<%= form_tag("/",method:"get") do %>
+<%= form_tag("/timetable",method:"post") do %>
 <button type="submit" class="btn btn-primary">検索</button>
 <% end %>
 
-<%= form_tag("/",method: "get") do %>
-<button type="submit" class="btn btn-danger">リセット</button>
+
+
+<table class="table">
+<th>発車時刻</th><th>種別</th><th>行先</th><th>備考</th>
+<% @timetables.each do |timetable| %>
+<tr><td><%= timetable["odpt:departureTime"] %></td><td><%= timetable["odpt:trainType"] %></td><td><%= timetable["odpt:destinationStation"] %></td><td><%= timetable["odpt:notes"] %></td></tr>
 <% end %>
+</table>

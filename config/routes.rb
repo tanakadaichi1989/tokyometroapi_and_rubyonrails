@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'timetables/top'
+  get '/timetable' => 'timetables#top'
+  
+  post '/timetable' => 'timetables#search'
 
   get '/' => 'home#top'
 
