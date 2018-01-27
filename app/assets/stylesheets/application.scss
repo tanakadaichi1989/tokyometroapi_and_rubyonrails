@@ -3,13 +3,23 @@
 
 
 @mixin box($color){
-  background-color:$color;
+
+background-color:$color;
+
+h3{
+  margin:10px;
+  font-size:20px;
+  font-weight:bolder;
+}
+
+
 }
 
 body{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  background-color:lighten(#EEEEEE,5%);
 }
 
 header{
@@ -39,9 +49,63 @@ footer{
   padding-left:10px;
 }
 
+h2{
+  font-size:30px;
+  font-weight:bolder;
+}
+
+.info{
+}
+
 
 @each $line,$color in $line_colors{
   .#{$line} {
     @include box($color);
+  }
+}
+
+
+@media screen and (max-width:544px){
+
+  #yield{
+    margin-top:25px;
+  }
+
+  header {
+    h1 {
+      font-size:20px;
+      margin-top:10px;
+    }
+  }
+
+  .info{
+     margin-bottom:10px;
+  }
+}
+
+@media screen and (min-width:545px) and (max-width:768px){
+  header{
+    h1{
+      font-size:20px;
+      margin-top:10px;
+    }
+  }
+
+  .info{
+    height:200px;
+  }
+
+  .row{
+    margin-bottom:20px;
+  }
+}
+
+@media screen and (min-width:769px){
+  .info{
+    height:300px;
+  }
+
+  .row{
+    margin-bottom:20px;
   }
 }
