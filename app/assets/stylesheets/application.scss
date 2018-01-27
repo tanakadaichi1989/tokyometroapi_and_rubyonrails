@@ -4,12 +4,23 @@
 
 @mixin box($color){
 
-background-color:$color;
+background-color:white;
+box-shadow:1px 1px 2px gray;
+border-bottom:$color 2px solid;
+
+img{
+  width:20px;
+  height:20px;
+  position:absolute;
+  top:11px;
+}
 
 h3{
-  margin:10px;
+  margin-top:10px;
+  margin-left:30px;
   font-size:20px;
   font-weight:bolder;
+
 }
 
 
@@ -107,7 +118,6 @@ h2{
 
 @media screen and (min-width:769px){
   .info{
-
     min-height:300px;
   }
 
