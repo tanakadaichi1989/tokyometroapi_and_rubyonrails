@@ -68,7 +68,7 @@ h2{
 @media screen and (max-width:544px){
 
   #yield{
-    margin-top:25px;
+    margin-top:20px;
   }
 
   header {
@@ -91,8 +91,13 @@ h2{
     }
   }
 
+  #yield{
+    margin-top:20px;
+  }
+
   .info{
-    height:200px;
+    height:auto;
+    min-height:200px;
   }
 
   .row{
@@ -102,10 +107,15 @@ h2{
 
 @media screen and (min-width:769px){
   .info{
-    height:300px;
+
+    min-height:300px;
   }
 
   .row{
     margin-bottom:20px;
+  }
+
+  .container{
+    margin-top:40px;
   }
 }
