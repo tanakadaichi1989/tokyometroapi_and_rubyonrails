@@ -12,7 +12,7 @@ class TimetablesController < ApplicationController
       json = Net::HTTP.get(uri)
       results = JSON.parse(json)
       
-      a = 302
+      a = params[:number]
       
       @timetables = results[a]["odpt:weekdays"]
       puts results[a]
