@@ -1,6 +1,22 @@
 @import "bootstrap";
 @import "variation";
 
+$line_colors:(
+ginza:$ginza,
+marunouchi:$marunouchi,
+hibiya:$hibiya,
+tozai:$tozai,
+chiyoda:$chiyoda,
+yurakucho:$yurakucho,
+hanzomon:$hanzomon,
+namboku:$namboku,
+fukutoshin:$fukutoshin
+);
+
+@mixin box($color){
+  background-color:$color;
+}
+
 body{
   margin:0;
   padding:0;
@@ -34,6 +50,8 @@ footer{
   padding-left:10px;
 }
 
-div{
-  height:300px;
+@each $line,$color in $line_colors{
+  .#{$line} {
+    @include box($color);
+  }
 }

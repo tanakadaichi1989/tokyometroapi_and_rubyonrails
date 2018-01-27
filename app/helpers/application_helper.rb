@@ -12,6 +12,6 @@ module ApplicationHelper
     end
     
     def now_time
-        DateTime.now.strftime("%Y/%m/d %H時:M分")
+        DateTime.now.strftime("%Y/%m/%d %H:%M")
     end
 end
