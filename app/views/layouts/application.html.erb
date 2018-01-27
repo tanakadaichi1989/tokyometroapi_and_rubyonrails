@@ -1,33 +1,17 @@
 <!DOCTYPE html lang="ja">
 <html>
-  <head>
-  <meta charset="UTF-8">
-    <title><%= full_page(yield(:title)) %></title>
-    <meta name="viewport" content="width=device-width">
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= analytics_init if Rails.env.production? %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
+<%= render('layouts/head') %>
 
 <body>
-<header>
-<h1>TokyoMetro API & Ruby on Rails</h1>
-
-
-</header>
+<%= render('layouts/header') %>
 
 <div id="yield">
     <%= yield %>
 </div>
 
-<footer>
-  <p>Daichi Tanaka</p>
-</footer>
+
+<%= render('layouts/footer') %>
 
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
