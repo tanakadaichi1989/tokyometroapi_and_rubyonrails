@@ -1,4 +1,92 @@
 module TimetablesHelper
+    
+    def set_line_name(line_name)
+        case line_name
+        when "odpt.Railway:TokyoMetro.Ginza"
+            return "銀座線"
+        when "odpt.Railway:TokyoMetro.Marunouchi"
+            return "丸ノ内線"
+        when "odpt.Railway:TokyoMetro.Hibiya"
+            return "日比谷線"
+        when "odpt.Railway:TokyoMetro.Tozai"
+            return "東西線"
+        when "odpt.Railway:TokyoMetro.Chiyoda"
+            return "千代田線"
+        when "odpt.Railway:TokyoMetro.Yurakucho"
+            return "有楽町線"
+        when "odpt.Railway:TokyoMetro.Hanzomon"
+            return "半蔵門線"
+        when "odpt.Railway:TokyoMetro.Namboku"
+            return "南北線"
+        when "odpt.Railway:TokyoMetro.Fukutoshin"
+            return "副都心線"
+        else
+            return "不明"
+        end
+    end
+    
+    def set_station(station)
+    end
+    
+    def set_direction(direction)
+        case direction
+        when "odpt.RailDirection:TokyoMetro.Asakusa"
+            return "浅草方面"
+        when "odpt.RailDirection:TokyoMetro.Shibuya"
+            return "渋谷方面"
+        when "odpt.RailDirection:TokyoMetro.Ogikubo"
+            return "荻窪方面"
+        when "odpt.RailDirection:TokyoMetro.Ikebukuro"
+            return "池袋方面"
+        when "odpt.RailDirection:TokyoMetro.Honancho"
+            return "方南町方面"
+        when "odpt.RailDirection:TokyoMetro.NakanoSakaue"
+            return "中野坂上方面"
+        when "odpt.RailDirection:TokyoMetro.Nakameguro"
+            return "中目黒方面"
+        when "odpt.RailDirection:TokyoMetro.KitaSenju"
+            return "北千住方面"
+        when "odpt.RailDirection:TokyoMetro.NishiFunabashi"
+            return "西船橋方面"
+        when "odpt.RailDirection:TokyoMetro.Nakano"
+            return "中野方面"
+        when "odpt.RailDirection:TokyoMetro.YoyogiUehara"
+            return "代々木上原方面"
+        when "odpt.RailDirection:TokyoMetro.Ayase"
+            return "綾瀬方面"
+        when "odpt.RailDirection:TokyoMetro.KitaAyase"
+            return "北綾瀬方面"
+        when "odpt.RailDirection:TokyoMetro.ShinKiba"
+            return "新木場方面"
+        when "odpt.RailDirection:TokyoMetro.Oshiage"
+            return "押上方面"
+        when "odpt.RailDirection:TokyoMetro.AkabaneIwabuchi"
+            return "赤羽岩淵方面"
+        when "odpt.RailDirection:TokyoMetro.Meguro"
+            return "目黒方面"
+        when "odpt.RailDirection:TokyoMetro.ShirokaneTakanawa"
+            return "白金高輪方面"
+        when "odpt.RailDirection:TokyoMetro.Wakoshi"
+            return "和光市方面"
+        when "odpt.RailDirection:TokyoMetro.KotakeMukaihara"
+            return "小竹向原方面"
+        else
+            return "不明"
+        end
+    end
+    
+    def set_date_type(date_type)
+        case date_type
+        when "odpt:weekdays"
+            return "平日"
+        when "odpt:saturdays"
+            return "土曜"
+        when "odpt:holidays"
+            return "日曜・祝日"
+        else
+            return "不明"
+        end
+    end
 
     
     def set_train_type(train_type)
@@ -36,7 +124,7 @@ module TimetablesHelper
         when "odpt.TrainType:TokyoMetro.F-Liner"
             return "Fライナー"
         when "odpt.TrainType:TokyoMetro.S-TRAIN"
-            return "S-TRAIN"
+            return "Sトレイン"
         when "odpt.TrainType:TokyoMetro.Unknown"
             return "不明"
         else
@@ -171,6 +259,8 @@ module TimetablesHelper
                 return "北綾瀬"
             when "odpt.Station:TokyoMetro.Yurakucho.Wakoshi"
                 return "和光市"
+            when "odpt.Station:TokyoMetro.Yurakucho.KotakeMukaihara"
+                return "小竹向原"
             when "odpt.Station:TokyoMetro.Yurakucho.Ikebukuro"
                 return "池袋（有楽町線)"
             when "odpt.Station:TokyoMetro.Yurakucho.ShinKiba"

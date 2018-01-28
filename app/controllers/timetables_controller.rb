@@ -11,10 +11,12 @@ class TimetablesController < ApplicationController
       
       a = params[:number].to_i
       
-      @timetables = results[a]["odpt:weekdays"]
+      @timetables = results[a][params[:date_type]]
       @railway = results[a]["odpt:railway"]
       @station = results[a]["odpt:station"]
       @direction = results[a]["odpt:railDirection"]
+      @date_type = params[:date_type]
+      
       puts results[a]
       
       render('timetables/top')

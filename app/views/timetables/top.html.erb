@@ -1,12 +1,8 @@
 <% provide(:title,"時刻表検索") %>
 
 <h2>時刻表検索</h2>
-<p><%= @railway %>線 <%= @station %>駅 <%= @direction %>方面 平日</p>
+<p><%= set_line_name(@railway) %> <%= @station %>駅 <%= set_direction(@direction) %> <%= set_date_type(@date_type) %></p>
 
-
-<%= form_tag("/timetable",method:"post") do %>
-<input type="text" name="number">
-<button type="submit" class="btn btn-primary">検索</button>
-<% end %>
+<%= render('timetables/search') %>
 
 <%= render('timetables/table') %>
