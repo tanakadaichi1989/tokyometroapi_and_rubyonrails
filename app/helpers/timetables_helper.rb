@@ -416,9 +416,6 @@ module TimetablesHelper
         end
     end
     
-    def set_station(station)
-    end
-    
     def set_direction(direction)
         case direction
         when "odpt.RailDirection:TokyoMetro.Asakusa"
@@ -710,6 +707,33 @@ module TimetablesHelper
                 return "西武秩父"
             else
                 destination
+        end
+    end
+    
+    def set_line_image(line)
+        case line
+            when "odpt.Railway:TokyoMetro.Ginza"
+                return "G.jpg"
+            when "odpt.Railway:TokyoMetro.Marunouchi"
+                return "M.jpg"
+            when "odpt.Railway:TokyoMetro.MarunouchiBranch"
+                return "M.jpg"
+            when "odpt.Railway:TokyoMetro.Hibiya"
+                return "H.jpg"
+            when "odpt.Railway:TokyoMetro.Tozai"
+                return "T.jpg"
+            when "odpt.Railway:TokyoMetro.Chiyoda"
+                return "C.jpg"
+            when "odpt.Railway:TokyoMetro.Yurakucho"
+                return "Y.jpg"
+            when "odpt.Railway:TokyoMetro.Hanzomon"
+                return "Z.jpg"
+            when "odpt.Railway:TokyoMetro.Namboku"
+                return "N.jpg"
+            when "odpt.Railway:TokyoMetro.Fukutoshin"
+                return "F.jpg"
+            else
+                return "TokyoMetro.png"
         end
     end
 end
