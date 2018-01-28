@@ -9,16 +9,17 @@ class TimetablesController < ApplicationController
   def search
       results = set_request_timetable
       
-      a = params[:number].to_i
+      hash = combination_station_and_direction
       
-      @timetables = results[a][params[:date_type]]
-      @railway = results[a]["odpt:railway"]
-      @station = results[a]["odpt:station"]
-      @direction = results[a]["odpt:railDirection"]
+      number = hash[[params[:station_list],params[:direction_list]]].to_i
+      
+      @timetables = results[number][params[:date_type]]
+      @railway = results[number]["odpt:railway"]
+      @station = results[number]["odpt:station"]
+      @direction = results[number]["odpt:railDirection"]
       @date_type = params[:date_type]
       
-      puts results[a]
-      
       render('timetables/top')
+      
   end
 end

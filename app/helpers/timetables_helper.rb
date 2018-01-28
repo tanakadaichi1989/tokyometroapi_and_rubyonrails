@@ -267,6 +267,8 @@ module TimetablesHelper
                 return "新木場"
             when "odpt.Station:TokyoMetro.Yurakucho.Toyosu"
                 return "豊洲"
+            when "odpt.Station:TokyoMetro.Fukutoshin.ShinKiba"
+                return "新木場"
             when "odpt.Station:TokyoMetro.Hanzomon.Suitengumae"
                 return "水天宮前"
             when "odpt.Station:Tokyu.DenEnToshi.ChuoRinkan"

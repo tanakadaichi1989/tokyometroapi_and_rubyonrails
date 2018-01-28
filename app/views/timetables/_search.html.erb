@@ -1,11 +1,12 @@
 <%= form_tag("/timetable",method:"post") do %>
 
-<select name="date_type">
-  <option selected="selected" class="msg">▼--曜日選択--▼</option>
-  <option value="odpt:weekdays">平日</option>
-  <option value="odpt:saturdays">土曜</option>
-  <option value="odpt:holidays">日曜・祝日</option>
-</select>
+
+
+<%= render("timetables/station_list") %>
+
+<%= render("timetables/direction_list") %>
+
+<%= render("timetables/date_type") %>
 
 <button type="submit" class="btn btn-primary">検索</button>
 <% end %>
