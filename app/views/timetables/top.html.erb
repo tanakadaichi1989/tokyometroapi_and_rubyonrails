@@ -1,11 +1,9 @@
 <% provide(:title,"時刻表検索") %>
 
 <h2>時刻表検索</h2>
-<p>〇〇駅 〇〇方面</p>
 
-<%= form_tag("/timetable",method:"post") do %>
-<input type="text" name="number">
-<button type="submit" class="btn btn-primary">検索</button>
-<% end %>
+<%= render('timetables/label') %>
+
+<%= render('timetables/search') %>
 
 <%= render('timetables/table') %>
