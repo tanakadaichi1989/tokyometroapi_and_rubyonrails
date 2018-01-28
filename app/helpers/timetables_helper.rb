@@ -139,10 +139,54 @@ module TimetablesHelper
                 return "南千住"
             when "odpt.Station:TokyoMetro.Hibiya.Kitasenju"
                 return "北千住"
+                
+            ## 東西線
+            when "odpt.Station:TokyoMetro.Tozai.Nakano"
+                return "中野"
+            when "odpt.Station:TokyoMetro.Tozai.Ochiai"
+                return "落合"
+            when "odpt.Station:TokyoMetro.Tozai.Takadanobaba"
+                return "高田馬場"
+            when "odpt.Station:TokyoMetro.Tozai.Iidabashi"
+                return "飯田橋"
+            when "odpt.Station:TokyoMetro.Tozai.Kudanshita"
+                return "九段下"
+            when "odpt.Station:TokyoMetro.Tozai.Takebashi"
+                return "竹橋"
+            when "odpt.Station:TokyoMetro.Tozai.Otemachi"
+                return "大手町"
+            when "odpt.Station:TokyoMetro.Tozai.Nihombashi"
+                return "日本橋"
+            when "odpt.Station:TokyoMetro.Tozai.Kayabacho"
+                return "茅場町"
+            when "odpt.Station:TokyoMetro.Tozai.Monzennakamachi"
+                return "門前仲町"
+            when "odpt.Station:TokyoMetro.Tozai.Kiba"
+                return "木場"
+            when "odpt.Station:TokyoMetro.Tozai.Toyocho"
+                return "東陽町"
+            when "odpt.Station:TokyoMetro.Tozai.Minamisunamachi"
+                return "南砂町"
+            when "odpt.Station:TokyoMetro.Tozai.Nishikasai"
+                return "西葛西"
+            when "odpt.Station:TokyoMetro.Tozai.Kasai"
+                return "葛西"
+            when "odpt.Station:TokyoMetro.Tozai.Urayasu"
+                return "浦安"
+            when "odpt.Station:TokyoMetro.Tozai.Minamigyotoku"
+                return "南行徳"
+            when "odpt.Station:TokyoMetro.Tozai.Gyotoku"
+                return "行徳"
+            when "odpt.Station:TokyoMetro.Tozai.Myoden"
+                return "妙典"
+            when "odpt.Station:TokyoMetro.Tozai.Barakinakayama"
+                return "原木中山"
+            when "odpt.Station:TokyoMetro.Tozai.NishiFunabashi"
+                return "西船橋"
 
             ## 駅名不明
             else
-            station
+                return station
         end
     end
 
