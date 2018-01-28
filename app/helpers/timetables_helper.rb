@@ -231,7 +231,7 @@ module TimetablesHelper
                 return "辰巳"
             when "odpt.Station:TokyoMetro.Yurakucho.Toyosu"
                 return "豊洲"
-            when "odpt.Station:TokyoMetro.Yurakucho.Tsukisima"
+            when "odpt.Station:TokyoMetro.Yurakucho.Tsukishima"
                 return "月島"
             when "odpt.Station:TokyoMetro.Yurakucho.Shintomicho"
                 return "新富町"
