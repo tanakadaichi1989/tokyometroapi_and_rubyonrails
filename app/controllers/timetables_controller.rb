@@ -1,4 +1,5 @@
 class TimetablesController < ApplicationController
+  include TimetablesHelper
   before_action :set_library
     
   def top
