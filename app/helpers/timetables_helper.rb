@@ -349,7 +349,7 @@ module TimetablesHelper
                 return "北参道"
             when "odpt.Station:TokyoMetro.Fukutoshin.ShinjukuSanchome"
                 return "新宿三丁目"
-            when "odpt.Station:TokyoMetro.Fukutoshin.HiagashiShinjuku"
+            when "odpt.Station:TokyoMetro.Fukutoshin.HigashiShinjuku"
                 return "東新宿"
             when "odpt.Station:TokyoMetro.Fukutoshin.NishiWaseda"
                 return "西早稲田"
