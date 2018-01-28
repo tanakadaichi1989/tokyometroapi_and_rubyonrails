@@ -1,14 +1,12 @@
-<%= form_tag("/timetable",method:"post") do %>
+<div>
+<%= form_tag("/timetable",method:"post", class: "form") do %>
 
 <%= render("timetables/line_list") %>
-
 <%= render("timetables/station_list") %>
-
-
 <%= render("timetables/direction_list") %>
-
 <%= render("timetables/date_type") %>
 
 <button type="submit" class="btn btn-primary">検索</button>
 
 <% end %>
+</div>

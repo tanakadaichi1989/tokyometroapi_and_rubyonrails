@@ -1,7 +1,8 @@
 <% provide(:title,"時刻表検索") %>
 
 <h2>時刻表検索</h2>
-<p><%= set_line_name(@railway) %> <%= @station %>駅 <%= set_direction(@direction) %> <%= set_date_type(@date_type) %></p>
+
+<%= render('timetables/label') %>
 
 <%= render('timetables/search') %>
 

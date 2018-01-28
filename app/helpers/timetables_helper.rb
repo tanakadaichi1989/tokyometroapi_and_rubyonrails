@@ -6,6 +6,8 @@ module TimetablesHelper
             return "銀座線"
         when "odpt.Railway:TokyoMetro.Marunouchi"
             return "丸ノ内線"
+        when "odpt.Railway:TokyoMetro.MarunouchiBranch"
+            return "丸ノ内線"
         when "odpt.Railway:TokyoMetro.Hibiya"
             return "日比谷線"
         when "odpt.Railway:TokyoMetro.Tozai"
