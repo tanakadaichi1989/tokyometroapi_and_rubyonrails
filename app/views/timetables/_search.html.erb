@@ -1,12 +1,15 @@
-<div>
+<div class="custom-control container">
 <%= form_tag("/timetable",method:"post", class: "form") do %>
 
+<div class="row">
 <%= render("timetables/line_list") %>
 <%= render("timetables/station_list") %>
 <%= render("timetables/direction_list") %>
 <%= render("timetables/date_type") %>
+</div>
 
+<div class="row search-btn">
 <button type="submit" class="btn btn-primary">検索</button>
-
+</div>
 <% end %>
 </div>
