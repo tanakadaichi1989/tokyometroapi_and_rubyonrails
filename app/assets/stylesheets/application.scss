@@ -61,6 +61,11 @@ select{
   float:right;
 }
 
+#search-label{
+  font-weight:bold;
+  font-size:20px;
+}
+
 
 @each $line,$color in $line_colors{
   .#{$line} {

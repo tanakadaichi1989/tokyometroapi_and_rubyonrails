@@ -1,4 +1,4 @@
-<div>
+<div id="search-label">
 <% unless @railway == nil && @station == nil && @date_type == nil %>
 <p><%= set_line_name(@railway) %> <%= set_station_name(@station) %>駅 <%= set_direction(@direction) %> <%= set_date_type(@date_type) %></p>
 <% end %>
