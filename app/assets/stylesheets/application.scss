@@ -42,7 +42,11 @@ footer{
   height:25px;
   background-color:gray;
   padding-left:10px;
-  font-weight:bolder;
+
+  a {
+    font-weight:bolder;
+    color:black;
+  }
 }
 
 h2{
