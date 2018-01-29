@@ -1,4 +1,6 @@
 # TokyoMetro API  × Ruby on Rails
+![image](https://github.com/tanakadaichi1989/tokyometroapi_and_rubyonrails/blob/master/image.png)
+![image](https://github.com/tanakadaichi1989/tokyometroapi_and_rubyonrails/blob/master/image3.png)
 
 ## 概要
 東京メトロが公開しているオープンデータと連携させて、運行状況を表示させるサイト
