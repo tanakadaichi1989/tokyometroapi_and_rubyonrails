@@ -8,6 +8,11 @@ Ruby 2.4.1
 Rails 5.0.6
 Heroku
 
+### 運行状況
+https://tokyometroapi-and-rubyonrails.herokuapp.com
+
+### 時刻表
+https://tokyometroapi-and-rubyonrails.herokuapp.com/timetable
 ## 利用した技術
 ### Bootstrap
 レスポンシブデザインに利用
