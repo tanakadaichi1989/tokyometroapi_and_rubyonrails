@@ -21,7 +21,7 @@ module TimetablesHelper
                 return "新橋"
             when "odpt.Station:TokyoMetro.Ginza.Ginza"
                 return "銀座"
-            when "odpt.Station:TokyoMetro.Ginza.kyobashi"
+            when "odpt.Station:TokyoMetro.Ginza.Kyobashi"
                 return "京橋"
             when "odpt.Station:TokyoMetro.Ginza.Nihombashi"
                 return "日本橋"
