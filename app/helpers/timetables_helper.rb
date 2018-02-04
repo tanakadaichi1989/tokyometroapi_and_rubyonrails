@@ -108,7 +108,7 @@ module TimetablesHelper
             when "odpt.Station:TokyoMetro.Hibiya.Roppongi"
                 return "六本木"
             when "odpt.Station:TokyoMetro.Hibiya.Kamiyacho"
-                return "神屋町"
+                return "神谷町"
             when "odpt.Station:TokyoMetro.Hibiya.Kasumigaseki"
                 return "霞ヶ関"
             when "odpt.Station:TokyoMetro.Hibiya.Hibiya"
