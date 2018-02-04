@@ -199,7 +199,7 @@ module TimetablesHelper
                 return "赤坂"
             when "odpt.Station:TokyoMetro.Chiyoda.Kokkaigijidomae"
                 return "国会議事堂前"
-            when "odpt.Station:TokyoMetro.Chiyoda.kasumigaseki"
+            when "odpt.Station:TokyoMetro.Chiyoda.Kasumigaseki"
                 return "霞ヶ関"
             when "odpt.Station:TokyoMetro.Chiyoda.Hibiya"
                 return "日比谷"

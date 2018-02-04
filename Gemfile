@@ -9,7 +9,7 @@ gem 'dotenv-rails'
 
 gem 'bootstrap'
 gem 'google-analytics-rails'
-
+gem 'jquery-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'

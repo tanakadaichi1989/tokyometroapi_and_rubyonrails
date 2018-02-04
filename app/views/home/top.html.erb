@@ -4,11 +4,11 @@
 <p>情報取得時刻：<%= now_time %></p>
 
 <%= form_tag("/",method:"get") do %>
-<button type="submit" class="btn btn-primary">《運行状況》情報更新</button>
+<button type="submit" class="btn btn-primary btn-sm">《運行状況》情報更新</button>
 <% end %>
 
 <%= form_tag("/timetable",method:"get") do %>
-<button type="submit" class="btn btn-warning btn-sm">《時刻表検索》へ</button>
+<button type="submit" class="btn btn-secondary btn-sm">《時刻表検索》へ</button>
 <% end %>
 
 <%= render("home/table") %>
